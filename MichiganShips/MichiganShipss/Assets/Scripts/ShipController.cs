@@ -110,4 +110,10 @@ public class ShipController : MonoBehaviour
         starboardBroadside.Shoot();
         starboardDeckGun.Shoot();
     }
+
+    public void Die()
+    {
+        SceneSwitcher.previousLoser = this.gameObject.name;
+        SceneSwitcher.SwitchRestart();
+    }
 }

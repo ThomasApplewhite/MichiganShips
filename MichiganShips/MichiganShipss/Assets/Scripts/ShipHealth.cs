@@ -21,6 +21,6 @@ public class ShipHealth : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         health -= damage;
-        if(health <= 0) Debug.Log($"{this.gameObject.name}.ShipHealth.TakeDamage: Dead!");
+        if(health <= 0) this.gameObject.SendMessage("Die");//Debug.Log($"{this.gameObject.name}.ShipHealth.TakeDamage: Dead!");
     }
 }
