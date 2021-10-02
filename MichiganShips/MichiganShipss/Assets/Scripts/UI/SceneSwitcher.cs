@@ -2,8 +2,8 @@
 {
     public static string previousLoser { get; set; }
     
-    static int fightScene = 0;
-    static int menuScene = 1;
+    static int fightScene = 1;
+    static int menuScene = 0;
     static int restartScene = 2;
 
     public void StartGame()
