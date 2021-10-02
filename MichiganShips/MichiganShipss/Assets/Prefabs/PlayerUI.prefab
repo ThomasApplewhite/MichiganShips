@@ -272,7 +272,7 @@ MonoBehaviour:
   windCompass: {fileID: 1412021927646715176}
   northCompass: {fileID: 4138542144137386741}
   speedText: {fileID: 7836243212377953738}
-  hullIndicator: {fileID: 1534172415828187655}
+  fakeSpeedScale: 6
   healthIndicators:
   - {fileID: 7758848170755454148}
   - {fileID: 5511488516265374782}

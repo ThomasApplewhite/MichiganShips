@@ -17,6 +17,7 @@ public class StatUITracker : MonoBehaviour
 
     [Header("Speed Indicator")]
     public Text speedText;
+    public int fakeSpeedScale = 0;
     CharacterController shipControl;
 
     [Header("Health Indicators")]
@@ -52,12 +53,13 @@ public class StatUITracker : MonoBehaviour
 
     void UpdateNorth()
     {
-        northCompass.transform.up = Vector3.up - owner.transform.up;
+        //This doesn't work if you're facing backwards but whatever I'll get it later
+        northCompass.transform.up = Vector3.up * Vector3.Dot(owner.transform.up, Vector3.up); //Vector3.up - owner.transform.up;
     }
 
     void UpdateSpeed()
     {
-        speedText.text = $"Speed: {shipControl.velocity.magnitude}";
+        speedText.text = $"Speed: {(shipControl.velocity.magnitude * fakeSpeedScale).ToString("00.0")}";
     }
 
     void UpdateHealth()
