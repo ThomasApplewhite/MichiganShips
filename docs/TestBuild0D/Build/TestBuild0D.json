@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "MichiganShipss",
+"productVersion": "0.1",
+"dataUrl": "TestBuild0D.data.unityweb",
+"wasmCodeUrl": "TestBuild0D.wasm.code.unityweb",
+"wasmFrameworkUrl": "TestBuild0D.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.31f1"
+}
