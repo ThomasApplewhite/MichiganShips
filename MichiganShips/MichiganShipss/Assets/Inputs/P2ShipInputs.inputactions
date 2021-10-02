@@ -118,7 +118,7 @@
                     "name": "Navigate",
                     "type": "PassThrough",
                     "id": "66540019-4bd2-4c42-b79b-fbac5d2efcea",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
@@ -132,7 +132,7 @@
                 },
                 {
                     "name": "Cancel",
-                    "type": "PassThrough",
+                    "type": "Button",
                     "id": "6e268ef6-ee31-4443-b911-ec253298f67f",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -165,7 +165,7 @@
                 {
                     "name": "JL",
                     "id": "8c743a72-3cf8-4821-82b9-a086284eea8d",
-                    "path": "1DAxis",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -174,8 +174,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "6b70572c-d5c6-4a65-8719-bbc77724c93d",
+                    "name": "Left",
+                    "id": "cb329c4d-e7d0-449a-9438-ae5350df7a42",
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
@@ -185,8 +185,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "73654c65-6717-4a34-9ca5-d178b4999e67",
+                    "name": "Right",
+                    "id": "8796b998-74c2-42d0-ab04-68b858eeae0f",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",

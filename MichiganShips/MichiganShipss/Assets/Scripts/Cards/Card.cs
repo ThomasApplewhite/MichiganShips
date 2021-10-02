@@ -30,7 +30,7 @@ public class Card : Selectable, ISubmitHandler
     public Text deckText;
     public Text broadsideText;
 
-    CardData sourceData;
+    protected CardData sourceData;
 
     //public GameObject LeftRightSelectorPrefab;
 
@@ -50,9 +50,18 @@ public class Card : Selectable, ISubmitHandler
     }
 
     //To fulfill ISubmitHandler so that pressing "Submit" activates the card
-    public void OnSubmit(BaseEventData eventData)
+    public virtual void OnSubmit(BaseEventData eventData)
     {
-        FindSelectableOnLeft().Select();
+        var next = FindSelectableOnLeft();
+        if(next == null)
+        {
+            FindSelectableOnRight().Select();
+        }
+        else
+        {
+            next.Select();
+        }
+
         Activate(EffectSide.PORT);
     }
 

@@ -7,16 +7,19 @@ public class Deck : MonoBehaviour
     public string ownerShip;
     ShipController owner;
 
+    public int minimumChildren = 5;
+
     public GameObject cardPrefab;
 
     public List<CardData> startingCards; 
 
-    Queue<CardData> deckQueue;
+    protected Queue<CardData> deckQueue;
 
     void Awake()
     {
         Deck.Shuffle(startingCards);
         deckQueue = new Queue<CardData>(startingCards);
+        Debug.Log($"{this.gameObject.name}.Deck.Awake: done Shuffling!");
     }
     
     //Fisher-Yates Shuffle from https://stackoverflow.com/questions/273313/randomize-a-listt
@@ -33,6 +36,32 @@ public class Deck : MonoBehaviour
             datas[k] = datas[n];
             datas[n] = val;
         }
+    }
+
+    public void Activate()
+    {
+        this.gameObject.SetActive(true);
+        
+        if(this.gameObject.transform.childCount == 0)
+        {
+            GenerateCard();
+        }
+
+        this.gameObject.transform.GetChild(0).GetComponent<Card>().Select();
+    }
+
+    // Update is called once per frame
+    protected virtual void FixedUpdate()
+    {
+        if(this.gameObject.transform.childCount < minimumChildren)
+        {
+            GenerateCard();
+        }
+    }
+
+    void GenerateCard()
+    {
+        DrawCard().transform.SetParent(this.gameObject.transform);
     }
 
     public GameObject DrawCard()

@@ -5,21 +5,19 @@ using UnityEngine.UI;
 
 public class CardUIController : MonoBehaviour
 {
-    public bool handRowFirst = true;
+
     bool currentlyHandRow;
 
     [Header("Hand Row")]
-    public Hand handRow;
+    public Deck handRow;
 
     [Header("Trade Row")]
     public GameObject tradeRow;
-    public Selectable tradeRowFirstSelected;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(handRowFirst) EnableHandRow();
-        else EnableTradeRow();
+        EnableHandRow();
     }
 
     // Update is called once per frame
@@ -43,7 +41,7 @@ public class CardUIController : MonoBehaviour
         handRow.gameObject.SetActive(false);
         tradeRow.SetActive(true);
 
-        tradeRowFirstSelected.Select();
+        tradeRow.transform.GetChild(0).gameObject.GetComponent<Card>().Select();
     }
 
     public void SwitchRow()
