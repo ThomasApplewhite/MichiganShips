@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
-    public float windSpeedBoost = 1f;
-    public float maxChangePerCycle = 15f;
+    public float windSpeedBoost = 0.005f;
+    public float windSpeedMaxBoost = 0.02f;
+    public float maxChangePerCycle = 5f;
     public float cycleDuration = 5f;
 
     public Vector3 windDirection { get{ return this.gameObject.transform.up; } }

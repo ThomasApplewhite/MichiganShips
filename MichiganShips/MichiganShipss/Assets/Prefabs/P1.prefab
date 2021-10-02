@@ -66,17 +66,37 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 12
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: 1ace3c27-9253-4843-a3f2-a383dffd64a2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 43e89fcf-796b-4621-ae84-a95723360cfc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 90707f87-2160-4bfe-9404-f6a864ba7547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: 47dd4522-a5a7-4f68-90ed-34bd304b38b2
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
-      value: 94e00dc0-9507-48c2-a577-ffc5dfbebcae
+      value: e6c3adb2-76d9-4956-ab57-6b7c5bf852df
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionId
-      value: 927bfa92-1818-4a64-b964-75ce4ee92e1a
+      value: 927cc48a-d422-493d-9dc7-9acaaddc0db1
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -110,13 +130,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: PlayerOne/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: PlayerOne/ShootStarboard[/Keyboard/e]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: PlayerOne/ShootPort[/Keyboard/q]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: UIOne/Navigate[/Keyboard/c,/Keyboard/b]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
-      value: Player/ShootStarboard[/Keyboard/e]
+      value: UIOne/Submit[/Keyboard/f]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: Player/ShootPort[/Keyboard/q]
+      value: UIOne/Cancel[/Keyboard/v]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -161,16 +201,21 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
@@ -193,6 +238,11 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255417528804372714}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -235,6 +285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMoveInputs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShootStarboard
       objectReference: {fileID: 0}
@@ -252,6 +307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShootPort
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}

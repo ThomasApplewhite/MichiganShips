@@ -85,13 +85,14 @@ public class ShipController : MonoBehaviour
         var speedAdd = moveInputs.y >= 0 ? maxAcceleration : maxSlowdown;
         currentSpeed += (speedAdd / tickCount) * moveInputs.y;
 
-        if(currentSpeed > maxSpeed || currentSpeed < maxReverseSpeed)
+        var maxSpeedWithWind = maxSpeed + (wind.windSpeedMaxBoost * Vector3.Dot(shipTrans.up, wind.windDirection));
+        if(currentSpeed > maxSpeedWithWind || currentSpeed < maxReverseSpeed)
         {
-            currentSpeed = currentSpeed < 0 ? maxReverseSpeed : maxSpeed;
+            currentSpeed = currentSpeed < 0 ? maxReverseSpeed : maxSpeedWithWind;
         }
 
         //Step 2.5: Increase/Decrease Speed based on direction relative to wind
-        currentSpeed += wind.windSpeedBoost * Vector3.Dot(shipTrans.up, wind.windDirection);
+        //currentSpeed += wind.windSpeedBoost * Vector3.Dot(shipTrans.up, wind.windDirection);
 
         //Step 3: Rotate the Ship on the Z axis (since it moves on the X and Y axis)
         shipTrans.Rotate(0f, 0f, currentTurn);
