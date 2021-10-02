@@ -131,13 +131,13 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                     ""name"": ""Navigate"",
                     ""type"": ""PassThrough"",
                     ""id"": ""47dd4522-a5a7-4f68-90ed-34bd304b38b2"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
                     ""name"": ""Submit"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""e6c3adb2-76d9-4956-ab57-6b7c5bf852df"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -145,7 +145,7 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Cancel"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""927cc48a-d422-493d-9dc7-9acaaddc0db1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -178,7 +178,7 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                 {
                     ""name"": ""CB"",
                     ""id"": ""2510c44e-4e36-4c67-bd7b-5bacb69401d3"",
-                    ""path"": ""1DAxis"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -187,8 +187,8 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""f5a1e31b-8a77-45c0-9411-98178c5294d1"",
+                    ""name"": ""Left"",
+                    ""id"": ""d93be430-8e9a-4bc2-8d43-ef99f3b5e828"",
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -198,8 +198,8 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""positive"",
-                    ""id"": ""623001c9-0967-4db5-8907-2f35a9a82c0c"",
+                    ""name"": ""Right"",
+                    ""id"": ""515589b9-c77e-485d-821a-31a3c224fa73"",
                     ""path"": ""<Keyboard>/b"",
                     ""interactions"": """",
                     ""processors"": """",
