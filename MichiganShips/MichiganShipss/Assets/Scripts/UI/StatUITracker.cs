@@ -11,6 +11,8 @@ public class StatUITracker : MonoBehaviour
 
     [Header("Wind Direction")]
     public GameObject windCompass;
+    public string windTag = "Wind";
+    Wind wind;
 
     [Header("North Direction")]
     public GameObject northCompass;
@@ -29,6 +31,7 @@ public class StatUITracker : MonoBehaviour
     void Start()
     {
         owner = GameObject.FindWithTag(ownerShip);
+        wind = GameObject.FindWithTag(windTag).GetComponent<Wind>();
 
         shipControl = owner.GetComponent<CharacterController>();
 
@@ -48,7 +51,7 @@ public class StatUITracker : MonoBehaviour
 
     void UpdateWind()
     {
-        //nothing yet
+        windCompass.transform.up = wind.windDirection;
     }
 
     void UpdateNorth()

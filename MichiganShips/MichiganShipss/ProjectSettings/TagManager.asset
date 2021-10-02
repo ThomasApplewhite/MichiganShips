@@ -9,6 +9,7 @@ TagManager:
   - CannonBall
   - P1Armor
   - P2Armor
+  - Wind
   layers:
   - Default
   - TransparentFX

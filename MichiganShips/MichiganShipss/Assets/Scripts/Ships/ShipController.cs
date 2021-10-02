@@ -11,6 +11,7 @@ public class ShipController : MonoBehaviour
     public float maxSlowdown = -15f;
     public float maxSpeed = 15f;
     public float maxReverseSpeed = -5f;
+    public string windTag = "Wind";
 
     [Header("Turn Settings")]
     //How hard the ship can turn in 1 second
@@ -33,6 +34,7 @@ public class ShipController : MonoBehaviour
 
     CharacterController charControl;
     Transform shipTrans;
+    Wind wind;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,8 @@ public class ShipController : MonoBehaviour
             Debug.LogWarning($"{this.gameObject.name}.ShipController.Start(): No correct tag, disabling camera");
             shipCam.enabled = false;
         }
+
+        wind = GameObject.FindWithTag(windTag).GetComponent<Wind>();
     }
 
     // Update is called once per frame
@@ -86,8 +90,11 @@ public class ShipController : MonoBehaviour
             currentSpeed = currentSpeed < 0 ? maxReverseSpeed : maxSpeed;
         }
 
+        //Step 2.5: Increase/Decrease Speed based on direction relative to wind
+        currentSpeed += wind.windSpeedBoost * Vector3.Dot(shipTrans.up, wind.windDirection);
+
         //Step 3: Rotate the Ship on the Z axis (since it moves on the X and Y axis)
-        shipTrans.Rotate(new Vector3(0f, 0f, currentTurn));
+        shipTrans.Rotate(0f, 0f, currentTurn);
 
         //Step 4: Move the Ship, which always moves in the direction of its relative forward vector
         //Which in our case is "up"
