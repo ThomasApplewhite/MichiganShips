@@ -129,7 +129,7 @@ public class @P2ShipInputs : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Navigate"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""66540019-4bd2-4c42-b79b-fbac5d2efcea"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -137,7 +137,7 @@ public class @P2ShipInputs : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Submit"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""e2891b52-8fc5-4b87-86b5-b8ff752a2583"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -145,7 +145,7 @@ public class @P2ShipInputs : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Cancel"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""6e268ef6-ee31-4443-b911-ec253298f67f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
