@@ -7,6 +7,8 @@ TagManager:
   - P1
   - P2
   - CannonBall
+  - P1Armor
+  - P2Armor
   layers:
   - Default
   - TransparentFX

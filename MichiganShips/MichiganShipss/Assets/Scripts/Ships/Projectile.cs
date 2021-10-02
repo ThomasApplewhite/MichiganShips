@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 0.04f;
     public float maxDistance = 10f;
+    public int damage = 1;
 
     float distanceTravelled = 0f;
     bool moving = false;
@@ -36,6 +37,7 @@ public class Projectile : MonoBehaviour
         if(col.gameObject.tag != this.gameObject.tag && col.gameObject.tag != sourceTag)
         {
             Debug.Log($"{this.gameObject.name}.OnControllerColliderHit: hit {col.gameObject.name}");
+            col.gameObject.GetComponent<ShipHealth>()?.TakeDamage(damage);
             //Debug.Break();
             Destroy(this.gameObject);
         }
