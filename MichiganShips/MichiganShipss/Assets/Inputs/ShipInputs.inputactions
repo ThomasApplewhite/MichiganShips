@@ -2,7 +2,7 @@
     "name": "ShipInputs",
     "maps": [
         {
-            "name": "Player",
+            "name": "PlayerOne",
             "id": "01e190fb-fd74-421c-85eb-bce89c85f7b6",
             "actions": [
                 {
@@ -10,6 +10,22 @@
                     "type": "Value",
                     "id": "afb3aabf-a22d-4e05-9f0e-9cac5563675c",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShootStarboard",
+                    "type": "Button",
+                    "id": "94e00dc0-9507-48c2-a577-ffc5dfbebcae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShootPort",
+                    "type": "Button",
+                    "id": "927bfa92-1818-4a64-b964-75ce4ee92e1a",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -69,6 +85,137 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5f2907ce-cc2d-4706-a57d-f389607463a8",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootStarboard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3043684-cabc-4d33-92a9-06cdd20bca15",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootPort",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerTwo",
+            "id": "23a51202-07db-47ab-99ce-f74ab0801d18",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "6495ea51-6c1f-4290-9dd9-d95bcae0bb11",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShootStarboard",
+                    "type": "Button",
+                    "id": "886c041a-1d5e-4ec9-875e-12a324a1e30d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShootPort",
+                    "type": "Button",
+                    "id": "d6dd1ee7-9eb8-4cd8-b2ab-08eb58469a50",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Arrows",
+                    "id": "25ba73b3-aa23-47c5-8d0d-a20dd2f371b5",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "6ae24c97-0443-4940-9d92-2e776b91b3fb",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "8430c5bd-dfb6-4687-ac83-596631d84646",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "c05c20c3-3628-4083-8ea8-108ecf58b67d",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "e79a4dd7-cab6-41e2-a719-a73e2437ad23",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2dab35ee-44b1-41df-a2cb-4e78109b109d",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootStarboard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9ffff41-6c56-4ff3-86f1-1c9dbde82001",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootPort",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

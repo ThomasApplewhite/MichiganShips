@@ -18,6 +18,12 @@ public class ShipController : MonoBehaviour
     //How hard the ship can turn at all
     public float maxTurn = 45f;
 
+    [Header("Cannons")]
+    public Cannon starboardBroadside;
+    public Cannon starboardDeckGun;
+    public Cannon portBroadside;
+    public Cannon portDeckGun;
+
     readonly float tickCount = 60f;
 
     float currentTurn = 0f;
@@ -59,12 +65,14 @@ public class ShipController : MonoBehaviour
         //moveInputs needs to be negated because input left is negative but rotate left is positive
         currentTurn = (maxTurnChange / tickCount) * -moveInputs.x;
         
+        //I wrote this block to prevent ships from turning on a dime, but it doesn't work and I might not even
+        //need it.
         //If that number's too big though, clamp it.
-        if(Mathf.Abs(currentTurn - shipTrans.localEulerAngles.z) <= 0.001f)
+        /*if(Mathf.Abs(currentTurn - shipTrans.localEulerAngles.z) <= 0.001f)
         {
             //If currentTurn is less than 0, the max needs to be negative too
             currentTurn = 0;//currentTurn < 0 ? -maxTurn : maxTurn;
-        }
+        }*/
         
 
         //Step 2: Calculate how fast the ship should be going
@@ -89,5 +97,17 @@ public class ShipController : MonoBehaviour
     public void UpdateMoveInputs(InputAction.CallbackContext context)
     {
         moveInputs = context.ReadValue<Vector2>();
+    }
+
+    public void ShootPort()
+    {
+        portBroadside.Shoot();
+        portDeckGun.Shoot();
+    }
+
+    public void ShootStarboard()
+    {
+        starboardBroadside.Shoot();
+        starboardDeckGun.Shoot();
     }
 }

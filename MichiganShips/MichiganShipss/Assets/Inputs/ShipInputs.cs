@@ -15,7 +15,7 @@ public class @ShipInputs : IInputActionCollection, IDisposable
     ""name"": ""ShipInputs"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""PlayerOne"",
             ""id"": ""01e190fb-fd74-421c-85eb-bce89c85f7b6"",
             ""actions"": [
                 {
@@ -23,6 +23,22 @@ public class @ShipInputs : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""afb3aabf-a22d-4e05-9f0e-9cac5563675c"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShootStarboard"",
+                    ""type"": ""Button"",
+                    ""id"": ""94e00dc0-9507-48c2-a577-ffc5dfbebcae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShootPort"",
+                    ""type"": ""Button"",
+                    ""id"": ""927bfa92-1818-4a64-b964-75ce4ee92e1a"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -82,6 +98,137 @@ public class @ShipInputs : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5f2907ce-cc2d-4706-a57d-f389607463a8"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootStarboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e3043684-cabc-4d33-92a9-06cdd20bca15"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootPort"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerTwo"",
+            ""id"": ""23a51202-07db-47ab-99ce-f74ab0801d18"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""6495ea51-6c1f-4290-9dd9-d95bcae0bb11"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShootStarboard"",
+                    ""type"": ""Button"",
+                    ""id"": ""886c041a-1d5e-4ec9-875e-12a324a1e30d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ShootPort"",
+                    ""type"": ""Button"",
+                    ""id"": ""d6dd1ee7-9eb8-4cd8-b2ab-08eb58469a50"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Arrows"",
+                    ""id"": ""25ba73b3-aa23-47c5-8d0d-a20dd2f371b5"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""6ae24c97-0443-4940-9d92-2e776b91b3fb"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""8430c5bd-dfb6-4687-ac83-596631d84646"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""c05c20c3-3628-4083-8ea8-108ecf58b67d"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""e79a4dd7-cab6-41e2-a719-a73e2437ad23"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2dab35ee-44b1-41df-a2cb-4e78109b109d"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootStarboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9ffff41-6c56-4ff3-86f1-1c9dbde82001"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootPort"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -655,9 +802,16 @@ public class @ShipInputs : IInputActionCollection, IDisposable
         }
     ]
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        // PlayerOne
+        m_PlayerOne = asset.FindActionMap("PlayerOne", throwIfNotFound: true);
+        m_PlayerOne_Move = m_PlayerOne.FindAction("Move", throwIfNotFound: true);
+        m_PlayerOne_ShootStarboard = m_PlayerOne.FindAction("ShootStarboard", throwIfNotFound: true);
+        m_PlayerOne_ShootPort = m_PlayerOne.FindAction("ShootPort", throwIfNotFound: true);
+        // PlayerTwo
+        m_PlayerTwo = asset.FindActionMap("PlayerTwo", throwIfNotFound: true);
+        m_PlayerTwo_Move = m_PlayerTwo.FindAction("Move", throwIfNotFound: true);
+        m_PlayerTwo_ShootStarboard = m_PlayerTwo.FindAction("ShootStarboard", throwIfNotFound: true);
+        m_PlayerTwo_ShootPort = m_PlayerTwo.FindAction("ShootPort", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -716,38 +870,103 @@ public class @ShipInputs : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_Move;
-    public struct PlayerActions
+    // PlayerOne
+    private readonly InputActionMap m_PlayerOne;
+    private IPlayerOneActions m_PlayerOneActionsCallbackInterface;
+    private readonly InputAction m_PlayerOne_Move;
+    private readonly InputAction m_PlayerOne_ShootStarboard;
+    private readonly InputAction m_PlayerOne_ShootPort;
+    public struct PlayerOneActions
     {
         private @ShipInputs m_Wrapper;
-        public PlayerActions(@ShipInputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public PlayerOneActions(@ShipInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_PlayerOne_Move;
+        public InputAction @ShootStarboard => m_Wrapper.m_PlayerOne_ShootStarboard;
+        public InputAction @ShootPort => m_Wrapper.m_PlayerOne_ShootPort;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerOne; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(PlayerOneActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerOneActions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_PlayerOneActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @Move.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnMove;
+                @ShootStarboard.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootStarboard;
+                @ShootStarboard.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootStarboard;
+                @ShootStarboard.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootStarboard;
+                @ShootPort.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
+                @ShootPort.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
+                @ShootPort.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
             }
-            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_PlayerOneActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @ShootStarboard.started += instance.OnShootStarboard;
+                @ShootStarboard.performed += instance.OnShootStarboard;
+                @ShootStarboard.canceled += instance.OnShootStarboard;
+                @ShootPort.started += instance.OnShootPort;
+                @ShootPort.performed += instance.OnShootPort;
+                @ShootPort.canceled += instance.OnShootPort;
             }
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
+    public PlayerOneActions @PlayerOne => new PlayerOneActions(this);
+
+    // PlayerTwo
+    private readonly InputActionMap m_PlayerTwo;
+    private IPlayerTwoActions m_PlayerTwoActionsCallbackInterface;
+    private readonly InputAction m_PlayerTwo_Move;
+    private readonly InputAction m_PlayerTwo_ShootStarboard;
+    private readonly InputAction m_PlayerTwo_ShootPort;
+    public struct PlayerTwoActions
+    {
+        private @ShipInputs m_Wrapper;
+        public PlayerTwoActions(@ShipInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_PlayerTwo_Move;
+        public InputAction @ShootStarboard => m_Wrapper.m_PlayerTwo_ShootStarboard;
+        public InputAction @ShootPort => m_Wrapper.m_PlayerTwo_ShootPort;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerTwo; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerTwoActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerTwoActions instance)
+        {
+            if (m_Wrapper.m_PlayerTwoActionsCallbackInterface != null)
+            {
+                @Move.started -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnMove;
+                @ShootStarboard.started -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootStarboard;
+                @ShootStarboard.performed -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootStarboard;
+                @ShootStarboard.canceled -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootStarboard;
+                @ShootPort.started -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootPort;
+                @ShootPort.performed -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootPort;
+                @ShootPort.canceled -= m_Wrapper.m_PlayerTwoActionsCallbackInterface.OnShootPort;
+            }
+            m_Wrapper.m_PlayerTwoActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @ShootStarboard.started += instance.OnShootStarboard;
+                @ShootStarboard.performed += instance.OnShootStarboard;
+                @ShootStarboard.canceled += instance.OnShootStarboard;
+                @ShootPort.started += instance.OnShootPort;
+                @ShootPort.performed += instance.OnShootPort;
+                @ShootPort.canceled += instance.OnShootPort;
+            }
+        }
+    }
+    public PlayerTwoActions @PlayerTwo => new PlayerTwoActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -898,9 +1117,17 @@ public class @ShipInputs : IInputActionCollection, IDisposable
             return asset.controlSchemes[m_XRSchemeIndex];
         }
     }
-    public interface IPlayerActions
+    public interface IPlayerOneActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnShootStarboard(InputAction.CallbackContext context);
+        void OnShootPort(InputAction.CallbackContext context);
+    }
+    public interface IPlayerTwoActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnShootStarboard(InputAction.CallbackContext context);
+        void OnShootPort(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
