@@ -20,6 +20,11 @@ public class Deck : MonoBehaviour
         Deck.Shuffle(startingCards);
         deckQueue = new Queue<CardData>(startingCards);
         Debug.Log($"{this.gameObject.name}.Deck.Awake: done Shuffling!");
+
+        if(ownerShip != "")
+        {
+            owner = GameObject.FindWithTag(ownerShip).GetComponent<ShipController>();
+        }
     }
     
     //Fisher-Yates Shuffle from https://stackoverflow.com/questions/273313/randomize-a-listt
@@ -75,5 +80,10 @@ public class Deck : MonoBehaviour
     public void DiscardCard(CardData discard)
     {
         deckQueue.Enqueue(discard);
+    }
+
+    public void PlayCard(Vector3Int card)
+    {
+        owner.RunCardData(card);
     }
 }

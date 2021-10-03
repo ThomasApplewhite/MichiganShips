@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class ShipController : MonoBehaviour
 {
+    public int dubloons = 0;
+
     [Header("Speed Settings")]
     public float maxAcceleration = 5f;
     public float maxSlowdown = -15f;
@@ -24,6 +26,9 @@ public class ShipController : MonoBehaviour
     public Cannon starboardDeckGun;
     public Cannon portBroadside;
     public Cannon portDeckGun;
+
+    [Header("Shot Settings")]
+    public float shotDelay = 0.25f;
 
     readonly float tickCount = 60f;
 
@@ -102,6 +107,34 @@ public class ShipController : MonoBehaviour
         charControl.Move(shipTrans.up * currentSpeed);
     }
 
+    IEnumerator CycleBroadside(int count)
+    {
+        for(int i = count; count > 0; --count)
+        {
+            //just shoot both broadsides for now
+            starboardBroadside.Shoot();
+            portBroadside.Shoot();
+
+            yield return new WaitForSeconds(shotDelay);
+        }
+
+        yield return null;
+    }
+
+    IEnumerator CycleDeckGun(int count)
+    {
+        for(int i = count; count > 0; --count)
+        {
+            //just shoot both DeckGuns for now
+            starboardDeckGun.Shoot();
+            portDeckGun.Shoot();
+
+            yield return new WaitForSeconds(shotDelay);
+        }
+
+        yield return null;
+    }
+
     public void UpdateMoveInputs(InputAction.CallbackContext context)
     {
         moveInputs = context.ReadValue<Vector2>();
@@ -117,6 +150,15 @@ public class ShipController : MonoBehaviour
     {
         starboardBroadside.Shoot();
         starboardDeckGun.Shoot();
+    }
+
+    public void RunCardData(Vector3Int card)
+    {
+        Debug.Log($"{this.gameObject.name}.ShipController.RunCardData: Dubloon {card.x}, Broadside {card.y}, Deck Gun {card.z}");
+
+        dubloons += card.x;
+        StartCoroutine(CycleBroadside(card.y));
+        StartCoroutine(CycleDeckGun(card.z));
     }
 
     public void Die()

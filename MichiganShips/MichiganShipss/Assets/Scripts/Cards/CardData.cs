@@ -12,4 +12,9 @@ public class CardData : ScriptableObject
     public int deckGunShots;
 
     public System.Action specialEffect;
+
+    public Vector3Int GetEffectData()
+    {
+        return new Vector3Int(dubloonGain, broadsides, deckGunShots);
+    }
 }

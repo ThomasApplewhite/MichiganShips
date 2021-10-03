@@ -78,6 +78,7 @@ public class Card : MonoBehaviour//Selectable, ISubmitHandler
     public virtual void Activate(EffectSide side)
     {
         Debug.Log($"{this.gameObject.name}.Card.Activate: activated on {side} side");
+        homeDeck.PlayCard(sourceData.GetEffectData());
         homeDeck.DiscardCard(sourceData);
         Destroy(this.gameObject);
     }

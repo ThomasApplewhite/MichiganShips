@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1433510210040178867, guid: 88b324532134baf11b01285640fb7086,
+        type: 3}
+      propertyPath: ownerShip
+      value: P2
+      objectReference: {fileID: 0}
     - target: {fileID: 2110070860958608137, guid: 88b324532134baf11b01285640fb7086,
         type: 3}
       propertyPath: ownerShip
@@ -1118,6 +1123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 88.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488094481622730498, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: ownerShip
+      value: P1
       objectReference: {fileID: 0}
     - target: {fileID: 5759298344711056387, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
         type: 3}
