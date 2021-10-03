@@ -453,7 +453,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -711,6 +711,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335dd6abe81214d4ba59c02392d1265b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dubloons: 0
+  opponentShipTag: 
+  opponentShip: {fileID: 0}
   maxAcceleration: 0.025
   maxSlowdown: -0.05
   maxSpeed: 0.1
@@ -722,6 +725,7 @@ MonoBehaviour:
   starboardDeckGun: {fileID: 4881919232930938587}
   portBroadside: {fileID: 6006462899267229068}
   portDeckGun: {fileID: 3138766553790533615}
+  shotDelay: 0.25
 --- !u!114 &159664439894425795
 MonoBehaviour:
   m_ObjectHideFlags: 0
