@@ -16,6 +16,8 @@ public class StatUITracker : MonoBehaviour
 
     [Header("North Direction")]
     public GameObject northCompass;
+    public string opponentShip;
+    GameObject opponent;
 
     [Header("Speed Indicator")]
     public Text speedText;
@@ -36,6 +38,7 @@ public class StatUITracker : MonoBehaviour
     void Start()
     {
         owner = GameObject.FindWithTag(ownerShip);
+        opponent = GameObject.FindWithTag(opponentShip);
         wind = GameObject.FindWithTag(windTag).GetComponent<Wind>();
 
         shipControl = owner.GetComponent<CharacterController>();
@@ -64,7 +67,9 @@ public class StatUITracker : MonoBehaviour
     void UpdateNorth()
     {
         //This doesn't work if you're facing backwards but whatever I'll get it later
-        northCompass.transform.up = Vector3.up * Vector3.Dot(owner.transform.up, Vector3.up); //Vector3.up - owner.transform.up;
+        //northCompass.transform.up = Vector3.up * Vector3.Dot(owner.transform.up, Vector3.up); //Vector3.up - owner.transform.up;
+        //northCompass.transform.up = Vector3.Cross(owner.transform.up, Vector3.up);
+        northCompass.transform.up = opponent.transform.position - owner.transform.position;
     }
 
     void UpdateSpeed()

@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: ownerShip
       value: P2
       objectReference: {fileID: 0}
+    - target: {fileID: 2110070860958608137, guid: 88b324532134baf11b01285640fb7086,
+        type: 3}
+      propertyPath: opponentShip
+      value: P1
+      objectReference: {fileID: 0}
     - target: {fileID: 2751462226821261727, guid: 88b324532134baf11b01285640fb7086,
         type: 3}
       propertyPath: m_Name
@@ -955,6 +960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ownerShip
       value: P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110070860958608137, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: opponentShip
+      value: P2
       objectReference: {fileID: 0}
     - target: {fileID: 2751462226821261727, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
         type: 3}
