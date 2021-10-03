@@ -864,9 +864,9 @@ MonoBehaviour:
   m_ActionsAsset: {fileID: -944628639613478452, guid: f2da6979c400f0871a80fd9d1048324f,
     type: 3}
   m_PointAction: {fileID: 0}
-  m_MoveAction: {fileID: -8088300055362067852, guid: f2da6979c400f0871a80fd9d1048324f,
+  m_MoveAction: {fileID: -6467751842893620960, guid: f2da6979c400f0871a80fd9d1048324f,
     type: 3}
-  m_SubmitAction: {fileID: 4090589976030692627, guid: f2da6979c400f0871a80fd9d1048324f,
+  m_SubmitAction: {fileID: -8658696686316240282, guid: f2da6979c400f0871a80fd9d1048324f,
     type: 3}
   m_CancelAction: {fileID: 8511037384423274582, guid: f2da6979c400f0871a80fd9d1048324f,
     type: 3}
