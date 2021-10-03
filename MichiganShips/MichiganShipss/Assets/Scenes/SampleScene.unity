@@ -1167,8 +1167,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
         type: 3}
+      propertyPath: m_ChildScaleWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: m_ChildScaleHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
       propertyPath: m_ChildForceExpandWidth
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906913393522465995, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
+        type: 3}
+      propertyPath: m_ChildForceExpandHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7318060839681832210, guid: 1e3842bfaa1b229e19cb1a55d53360dc,
         type: 3}

@@ -276,6 +276,7 @@ MonoBehaviour:
   windCompass: {fileID: 1412021927646715176}
   windTag: Wind
   northCompass: {fileID: 4138542144137386741}
+  opponentShip: 
   speedText: {fileID: 7836243212377953738}
   fakeSpeedScale: 6
   healthIndicators:
@@ -729,6 +730,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5268226468297283347}
   - component: {fileID: 3268286576442642909}
+  - component: {fileID: 6884363115774186475}
+  - component: {fileID: 5563758893290684055}
   m_Layer: 5
   m_Name: TradeUI
   m_TagString: Untagged
@@ -780,6 +783,43 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!222 &6884363115774186475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214858295671542969}
+  m_CullTransparentMesh: 0
+--- !u!114 &5563758893290684055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214858295671542969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.93717265, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7746194378386142600
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +909,8 @@ GameObject:
   - component: {fileID: 7384299032946833855}
   - component: {fileID: 5906913393522465995}
   - component: {fileID: 5488094481622730498}
+  - component: {fileID: 526800061297412317}
+  - component: {fileID: 474541582311007594}
   m_Layer: 5
   m_Name: HandUI
   m_TagString: Untagged
@@ -947,6 +989,43 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a6308f028b1cd036ba7bf8423728e2f, type: 2}
   - {fileID: 11400000, guid: 0d2d15695c846a81191bd933e23f44a9, type: 2}
   - {fileID: 11400000, guid: 0d2d15695c846a81191bd933e23f44a9, type: 2}
+--- !u!222 &526800061297412317
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421743796372190004}
+  m_CullTransparentMesh: 0
+--- !u!114 &474541582311007594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421743796372190004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.2318742, b: 0.18431371, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8770577119851291889
 GameObject:
   m_ObjectHideFlags: 0
