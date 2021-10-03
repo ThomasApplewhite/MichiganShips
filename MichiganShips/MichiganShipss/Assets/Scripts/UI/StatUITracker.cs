@@ -27,6 +27,11 @@ public class StatUITracker : MonoBehaviour
     public Text[] healthIndicators;
     //ShipHealth hull;
     ShipHealth[] healths;
+
+    [Header("Dubloon Indicator")]
+    public Text dubloonText;
+    ShipController ship;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +43,7 @@ public class StatUITracker : MonoBehaviour
         //hull = owner.GetComponent<ShipHealth>();
         healths = owner.transform.GetComponentsInChildren<ShipHealth>();
 
+        ship = owner.GetComponent<ShipController>();
     }
 
     // Update is called once per frame
@@ -47,6 +53,7 @@ public class StatUITracker : MonoBehaviour
         UpdateNorth();
         UpdateSpeed();
         UpdateHealth();
+        UpdateDubloons();
     }
 
     void UpdateWind()
@@ -72,5 +79,10 @@ public class StatUITracker : MonoBehaviour
         {
             healthIndicators[i].text = $"{healths[i].gameObject.name}: {healths[i].health}";
         }
+    }
+
+    void UpdateDubloons()
+    {
+        dubloonText.text = $"Dubloons: {ship.dubloons}";
     }
 }

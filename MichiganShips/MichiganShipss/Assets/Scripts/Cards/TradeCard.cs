@@ -6,10 +6,15 @@ using UnityEngine.EventSystems;
 public class TradeCard : Card
 {
     public TradeCard twin { get; set; }
+    public ShipController buyer { get; set; }
 
     public override void Activate(EffectSide side)
     {
-        Buy();
+        if(buyer.dubloons >= sourceData.dubloonCost)
+        {
+            buyer.dubloons -= sourceData.dubloonCost;
+            Buy();
+        }
     }
 
     void Buy()

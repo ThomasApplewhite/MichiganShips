@@ -5,7 +5,7 @@ using UnityEngine;
 public class Deck : MonoBehaviour
 {
     public string ownerShip;
-    ShipController owner;
+    public ShipController owner { get; set; }
 
     public int minimumChildren = 5;
 

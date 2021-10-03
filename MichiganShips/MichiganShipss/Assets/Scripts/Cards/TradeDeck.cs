@@ -34,11 +34,13 @@ public class TradeDeck : Deck
         var cardB = Instantiate(cardPrefab, P2Trade.transform).GetComponent<TradeCard>();
 
         cardA.homeDeck = P1Deck;
+        cardA.buyer = P1Deck.owner;
         cardA.InitializeFromCardData(data);
         cardA.twin = cardB;
         cardA.gameObject.SetActive(true);
 
         cardB.homeDeck = P2Deck;
+        cardB.buyer = P2Deck.owner;
         cardB.InitializeFromCardData(data);
         cardB.twin = cardA;
         cardB.gameObject.SetActive(true);
