@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class CardUIController : MonoBehaviour
 {
@@ -43,8 +44,11 @@ public class CardUIController : MonoBehaviour
         tradeRow.SetActive(true);
     }
 
-    public void ActivateCard()
+    public void ActivateCard(InputAction.CallbackContext context)
     {
+        //Needs to be added due to a bug with button inputs and prefabs
+        if(!context.performed) return;
+
         Transform activatedCard;
         var cardNum = cursor.cursorPosition;
 
@@ -54,8 +58,12 @@ public class CardUIController : MonoBehaviour
         activatedCard.GetComponent<Card>().Activate(Card.EffectSide.PORT);
     }
 
-    public void SwitchRow()
+    public void SwitchRow(InputAction.CallbackContext context)
     {
+        //Needs to be added due to a bug with button inputs and prefabs
+        //Technically trade row isn't a prefab but whatever
+        if (!context.performed) return;
+
         if(currentlyHandRow) EnableTradeRow();
         else EnableHandRow();
     }

@@ -89,6 +89,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: P2Armor
       objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355586, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: opponentShipTag
+      value: P1
+      objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355593, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_Name
@@ -113,7 +118,7 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -133,17 +138,22 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionId
-      value: 66540019-4bd2-4c42-b79b-fbac5d2efcea
+      value: add2da7d-a315-47e9-932d-b8a5f3e832bd
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
-      value: e2891b52-8fc5-4b87-86b5-b8ff752a2583
+      value: 05d1c3c4-6606-4342-87c0-b7eba9281c02
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionId
-      value: 6e268ef6-ee31-4443-b911-ec253298f67f
+      value: c20e0664-ec3f-4801-a78b-43337ecc7485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 30b6864e-d449-4424-9f4d-c208e62e6802
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -163,17 +173,22 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionName
-      value: UITwo/Navigate[/Keyboard/j,/Keyboard/l]
+      value: PlayerTwo/CursorLeft[/Keyboard/j]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
-      value: UITwo/Submit[/Keyboard/i]
+      value: PlayerTwo/CursorRight[/Keyboard/l]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: UITwo/Cancel[/Keyboard/k]
+      value: PlayerTwo/SelectCard[/Keyboard/i]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: PlayerTwo/SwitchRow[/Keyboard/k]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -184,6 +199,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}

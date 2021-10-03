@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class ShipController : MonoBehaviour
 {
     public int dubloons = 0;
+    public string opponentShipTag;
+    public GameObject opponentShip;
 
     [Header("Speed Settings")]
     public float maxAcceleration = 5f;
@@ -63,6 +65,7 @@ public class ShipController : MonoBehaviour
         }
 
         wind = GameObject.FindWithTag(windTag).GetComponent<Wind>();
+        opponentShip = GameObject.FindWithTag(opponentShipTag);
     }
 
     // Update is called once per frame
@@ -111,9 +114,8 @@ public class ShipController : MonoBehaviour
     {
         for(int i = count; count > 0; --count)
         {
-            //just shoot both broadsides for now
-            starboardBroadside.Shoot();
-            portBroadside.Shoot();
+            if(OpponentOnStarboard()) starboardBroadside.Shoot();
+            else portBroadside.Shoot();
 
             yield return new WaitForSeconds(shotDelay);
         }
@@ -125,14 +127,23 @@ public class ShipController : MonoBehaviour
     {
         for(int i = count; count > 0; --count)
         {
-            //just shoot both DeckGuns for now
-            starboardDeckGun.Shoot();
-            portDeckGun.Shoot();
+            if(OpponentOnStarboard()) starboardDeckGun.Shoot();
+            else portDeckGun.Shoot();
 
             yield return new WaitForSeconds(shotDelay);
         }
 
         yield return null;
+    }
+
+    //Returns true if the opponent is on the right side.
+    //This is determined by Dot Producting this ship's right vector with the direction
+    //to the opponent ship
+    //The "or equasls" on zero will mean right side wins ties
+    bool OpponentOnStarboard()
+    {
+        var dirToOpponent = opponentShip.transform.position - shipTrans.position;
+        return Vector3.Dot(shipTrans.right, dirToOpponent) >= 0f;
     }
 
     public void UpdateMoveInputs(InputAction.CallbackContext context)

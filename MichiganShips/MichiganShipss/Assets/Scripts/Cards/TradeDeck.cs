@@ -11,6 +11,8 @@ public class TradeDeck : Deck
     public HorizontalLayoutGroup P2Trade;
     public Deck P2Deck;
 
+    public CardData needMoreCardsCard;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class TradeDeck : Deck
 
     void DrawTradeCard()
     {
-        var data = deckQueue.Dequeue();
+        CardData data = deckQueue.Count > 0 ? deckQueue.Dequeue() : (CardData) needMoreCardsCard.Clone();
 
         var cardA = Instantiate(cardPrefab, P1Trade.transform).GetComponent<TradeCard>();
         var cardB = Instantiate(cardPrefab, P2Trade.transform).GetComponent<TradeCard>();

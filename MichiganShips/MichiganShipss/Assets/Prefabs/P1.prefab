@@ -52,6 +52,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: P1Armor
       objectReference: {fileID: 0}
+    - target: {fileID: 4656885422293355586, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
+        type: 3}
+      propertyPath: opponentShipTag
+      value: P2
+      objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355593, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_Name
@@ -66,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -86,22 +91,22 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionId
-      value: 47dd4522-a5a7-4f68-90ed-34bd304b38b2
+      value: 0864b2eb-a3dd-4b93-b12e-378d13f7be81
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
-      value: e6c3adb2-76d9-4956-ab57-6b7c5bf852df
+      value: 055c6044-48ab-4f5c-8ce5-d9ee651d924d
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionId
-      value: 927cc48a-d422-493d-9dc7-9acaaddc0db1
+      value: d5b5de95-ff6f-4325-aeec-736738e5d7f8
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionId
-      value: 6495ea51-6c1f-4290-9dd9-d95bcae0bb11
+      value: 183f5f03-1392-4d9e-8d7e-8d026a09abf2
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
@@ -146,22 +151,22 @@ PrefabInstance:
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionName
-      value: UIOne/Navigate[/Keyboard/c,/Keyboard/b]
+      value: PlayerOne/CursorRight[/Keyboard/b]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
-      value: UIOne/Submit[/Keyboard/f]
+      value: PlayerOne/CursorLeft[/Keyboard/c]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: UIOne/Cancel[/Keyboard/v]
+      value: PlayerOne/SelectCard[/Keyboard/f]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionName
-      value: PlayerTwo/Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+      value: PlayerOne/SwitchRow[/Keyboard/v]
       objectReference: {fileID: 0}
     - target: {fileID: 4656885422293355596, guid: 4a865e3b8abeb6fd3a51d83a2d2724b6,
         type: 3}
