@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 1076934640109082655}
   - component: {fileID: 1740957625641249472}
   - component: {fileID: 1433510210040178867}
+  - component: {fileID: 1078995464156134148}
+  - component: {fileID: 8340713883729984380}
   m_Layer: 5
   m_Name: HandUI
   m_TagString: Untagged
@@ -167,6 +169,43 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a6308f028b1cd036ba7bf8423728e2f, type: 2}
   - {fileID: 11400000, guid: 0d2d15695c846a81191bd933e23f44a9, type: 2}
   - {fileID: 11400000, guid: 0d2d15695c846a81191bd933e23f44a9, type: 2}
+--- !u!222 &1078995464156134148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806072268263459001}
+  m_CullTransparentMesh: 0
+--- !u!114 &8340713883729984380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806072268263459001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.2318742, b: 0.18431371, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1412021927646715176
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,8 +271,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a4ca39a2faf45032f9bd93c2ed815948, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -365,8 +404,9 @@ MonoBehaviour:
   windCompass: {fileID: 1412021927646715176}
   windTag: Wind
   northCompass: {fileID: 4138542144137386741}
+  opponentShip: 
   speedText: {fileID: 7836243212377953738}
-  fakeSpeedScale: 0
+  fakeSpeedScale: 6
   healthIndicators:
   - {fileID: 7758848170755454148}
   - {fileID: 5511488516265374782}
@@ -405,7 +445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1946914364983522918
 RectTransform:
   m_ObjectHideFlags: 0
@@ -607,8 +647,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1e5c9ab4ec901d183bb38ee4482e01f2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -634,7 +674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7915307218249986702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -740,6 +780,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6384330767523044624}
   - component: {fileID: 2516287577433247768}
+  - component: {fileID: 2099760425977382599}
+  - component: {fileID: 1323034812313281789}
   m_Layer: 5
   m_Name: TradeUI
   m_TagString: Untagged
@@ -791,6 +833,43 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!222 &2099760425977382599
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6130030725300264416}
+  m_CullTransparentMesh: 0
+--- !u!114 &1323034812313281789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6130030725300264416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.93717265, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6871230921959005596
 GameObject:
   m_ObjectHideFlags: 0
