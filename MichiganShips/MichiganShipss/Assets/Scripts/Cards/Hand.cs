@@ -21,8 +21,6 @@ public class Hand : MonoBehaviour
         {
             GenerateCard();
         }
-
-        this.gameObject.transform.GetChild(0).GetComponent<Card>().Select();
     }
 
     // Update is called once per frame

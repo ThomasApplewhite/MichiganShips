@@ -41,6 +41,38 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CursorRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""0864b2eb-a3dd-4b93-b12e-378d13f7be81"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CursorLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""055c6044-48ab-4f5c-8ce5-d9ee651d924d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectCard"",
+                    ""type"": ""Button"",
+                    ""id"": ""d5b5de95-ff6f-4325-aeec-736738e5d7f8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SwitchRow"",
+                    ""type"": ""Button"",
+                    ""id"": ""183f5f03-1392-4d9e-8d7e-8d026a09abf2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,93 +152,50 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                     ""action"": ""ShootPort"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""UIOne"",
-            ""id"": ""49df0de1-82bf-46f3-9015-72f2204184a7"",
-            ""actions"": [
-                {
-                    ""name"": ""Navigate"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""47dd4522-a5a7-4f68-90ed-34bd304b38b2"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Submit"",
-                    ""type"": ""Button"",
-                    ""id"": ""e6c3adb2-76d9-4956-ab57-6b7c5bf852df"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Cancel"",
-                    ""type"": ""Button"",
-                    ""id"": ""927cc48a-d422-493d-9dc7-9acaaddc0db1"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""3d19e5b7-1f40-46fb-bdc9-78e950923f9d"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Submit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d4bee855-616e-46ab-b104-8746bb676ec9"",
-                    ""path"": ""<Keyboard>/v"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""CB"",
-                    ""id"": ""2510c44e-4e36-4c67-bd7b-5bacb69401d3"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Left"",
-                    ""id"": ""d93be430-8e9a-4bc2-8d43-ef99f3b5e828"",
+                    ""id"": ""bb96bec3-34ae-4e17-9410-245636055f6e"",
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Navigate"",
+                    ""action"": ""CursorLeft"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": true
+                    ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Right"",
-                    ""id"": ""515589b9-c77e-485d-821a-31a3c224fa73"",
+                    ""name"": """",
+                    ""id"": ""206d79c0-d8b3-44d9-93d1-b685e67cf8b6"",
                     ""path"": ""<Keyboard>/b"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Navigate"",
+                    ""action"": ""CursorRight"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": true
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6ad69d27-9750-4a43-b564-362a7d2337bd"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectCard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""057f38de-aa2e-4da3-b3f3-63b1a5fbfa43"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchRow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -230,11 +219,10 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
         m_PlayerOne_Move = m_PlayerOne.FindAction("Move", throwIfNotFound: true);
         m_PlayerOne_ShootStarboard = m_PlayerOne.FindAction("ShootStarboard", throwIfNotFound: true);
         m_PlayerOne_ShootPort = m_PlayerOne.FindAction("ShootPort", throwIfNotFound: true);
-        // UIOne
-        m_UIOne = asset.FindActionMap("UIOne", throwIfNotFound: true);
-        m_UIOne_Navigate = m_UIOne.FindAction("Navigate", throwIfNotFound: true);
-        m_UIOne_Submit = m_UIOne.FindAction("Submit", throwIfNotFound: true);
-        m_UIOne_Cancel = m_UIOne.FindAction("Cancel", throwIfNotFound: true);
+        m_PlayerOne_CursorRight = m_PlayerOne.FindAction("CursorRight", throwIfNotFound: true);
+        m_PlayerOne_CursorLeft = m_PlayerOne.FindAction("CursorLeft", throwIfNotFound: true);
+        m_PlayerOne_SelectCard = m_PlayerOne.FindAction("SelectCard", throwIfNotFound: true);
+        m_PlayerOne_SwitchRow = m_PlayerOne.FindAction("SwitchRow", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -287,6 +275,10 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerOne_Move;
     private readonly InputAction m_PlayerOne_ShootStarboard;
     private readonly InputAction m_PlayerOne_ShootPort;
+    private readonly InputAction m_PlayerOne_CursorRight;
+    private readonly InputAction m_PlayerOne_CursorLeft;
+    private readonly InputAction m_PlayerOne_SelectCard;
+    private readonly InputAction m_PlayerOne_SwitchRow;
     public struct PlayerOneActions
     {
         private @P1ShipInputs m_Wrapper;
@@ -294,6 +286,10 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_PlayerOne_Move;
         public InputAction @ShootStarboard => m_Wrapper.m_PlayerOne_ShootStarboard;
         public InputAction @ShootPort => m_Wrapper.m_PlayerOne_ShootPort;
+        public InputAction @CursorRight => m_Wrapper.m_PlayerOne_CursorRight;
+        public InputAction @CursorLeft => m_Wrapper.m_PlayerOne_CursorLeft;
+        public InputAction @SelectCard => m_Wrapper.m_PlayerOne_SelectCard;
+        public InputAction @SwitchRow => m_Wrapper.m_PlayerOne_SwitchRow;
         public InputActionMap Get() { return m_Wrapper.m_PlayerOne; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -312,6 +308,18 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                 @ShootPort.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
                 @ShootPort.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
                 @ShootPort.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnShootPort;
+                @CursorRight.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorRight;
+                @CursorRight.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorRight;
+                @CursorRight.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorRight;
+                @CursorLeft.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorLeft;
+                @CursorLeft.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorLeft;
+                @CursorLeft.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnCursorLeft;
+                @SelectCard.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSelectCard;
+                @SelectCard.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSelectCard;
+                @SelectCard.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSelectCard;
+                @SwitchRow.started -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSwitchRow;
+                @SwitchRow.performed -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSwitchRow;
+                @SwitchRow.canceled -= m_Wrapper.m_PlayerOneActionsCallbackInterface.OnSwitchRow;
             }
             m_Wrapper.m_PlayerOneActionsCallbackInterface = instance;
             if (instance != null)
@@ -325,59 +333,22 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
                 @ShootPort.started += instance.OnShootPort;
                 @ShootPort.performed += instance.OnShootPort;
                 @ShootPort.canceled += instance.OnShootPort;
+                @CursorRight.started += instance.OnCursorRight;
+                @CursorRight.performed += instance.OnCursorRight;
+                @CursorRight.canceled += instance.OnCursorRight;
+                @CursorLeft.started += instance.OnCursorLeft;
+                @CursorLeft.performed += instance.OnCursorLeft;
+                @CursorLeft.canceled += instance.OnCursorLeft;
+                @SelectCard.started += instance.OnSelectCard;
+                @SelectCard.performed += instance.OnSelectCard;
+                @SelectCard.canceled += instance.OnSelectCard;
+                @SwitchRow.started += instance.OnSwitchRow;
+                @SwitchRow.performed += instance.OnSwitchRow;
+                @SwitchRow.canceled += instance.OnSwitchRow;
             }
         }
     }
     public PlayerOneActions @PlayerOne => new PlayerOneActions(this);
-
-    // UIOne
-    private readonly InputActionMap m_UIOne;
-    private IUIOneActions m_UIOneActionsCallbackInterface;
-    private readonly InputAction m_UIOne_Navigate;
-    private readonly InputAction m_UIOne_Submit;
-    private readonly InputAction m_UIOne_Cancel;
-    public struct UIOneActions
-    {
-        private @P1ShipInputs m_Wrapper;
-        public UIOneActions(@P1ShipInputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Navigate => m_Wrapper.m_UIOne_Navigate;
-        public InputAction @Submit => m_Wrapper.m_UIOne_Submit;
-        public InputAction @Cancel => m_Wrapper.m_UIOne_Cancel;
-        public InputActionMap Get() { return m_Wrapper.m_UIOne; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIOneActions set) { return set.Get(); }
-        public void SetCallbacks(IUIOneActions instance)
-        {
-            if (m_Wrapper.m_UIOneActionsCallbackInterface != null)
-            {
-                @Navigate.started -= m_Wrapper.m_UIOneActionsCallbackInterface.OnNavigate;
-                @Navigate.performed -= m_Wrapper.m_UIOneActionsCallbackInterface.OnNavigate;
-                @Navigate.canceled -= m_Wrapper.m_UIOneActionsCallbackInterface.OnNavigate;
-                @Submit.started -= m_Wrapper.m_UIOneActionsCallbackInterface.OnSubmit;
-                @Submit.performed -= m_Wrapper.m_UIOneActionsCallbackInterface.OnSubmit;
-                @Submit.canceled -= m_Wrapper.m_UIOneActionsCallbackInterface.OnSubmit;
-                @Cancel.started -= m_Wrapper.m_UIOneActionsCallbackInterface.OnCancel;
-                @Cancel.performed -= m_Wrapper.m_UIOneActionsCallbackInterface.OnCancel;
-                @Cancel.canceled -= m_Wrapper.m_UIOneActionsCallbackInterface.OnCancel;
-            }
-            m_Wrapper.m_UIOneActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Navigate.started += instance.OnNavigate;
-                @Navigate.performed += instance.OnNavigate;
-                @Navigate.canceled += instance.OnNavigate;
-                @Submit.started += instance.OnSubmit;
-                @Submit.performed += instance.OnSubmit;
-                @Submit.canceled += instance.OnSubmit;
-                @Cancel.started += instance.OnCancel;
-                @Cancel.performed += instance.OnCancel;
-                @Cancel.canceled += instance.OnCancel;
-            }
-        }
-    }
-    public UIOneActions @UIOne => new UIOneActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -392,11 +363,9 @@ public class @P1ShipInputs : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnShootStarboard(InputAction.CallbackContext context);
         void OnShootPort(InputAction.CallbackContext context);
-    }
-    public interface IUIOneActions
-    {
-        void OnNavigate(InputAction.CallbackContext context);
-        void OnSubmit(InputAction.CallbackContext context);
-        void OnCancel(InputAction.CallbackContext context);
+        void OnCursorRight(InputAction.CallbackContext context);
+        void OnCursorLeft(InputAction.CallbackContext context);
+        void OnSelectCard(InputAction.CallbackContext context);
+        void OnSwitchRow(InputAction.CallbackContext context);
     }
 }
