@@ -26,21 +26,28 @@ public class CursorRow : MonoBehaviour
         
     }
 
-    public void MoveCursor(InputAction.CallbackContext context)
+    /*public void MoveCursor(InputAction.CallbackContext context)
     {
+        //Needs to be added due to a bug with button inputs and prefabs
+        if (!context.performed) return;
+
         var result = context.ReadValue<Vector2>();
         Debug.Log($"{this.gameObject.name}.CursorRow.MoveCursor: recieved input");
         if(result.x < 0) MoveCursorLeft();
         else MoveCursorRight();
-    }
+    }*/
 
-    public void MoveCursorLeft()
+    public void MoveCursorLeft(InputAction.CallbackContext context)
     {
+        //Needs to be added due to a bug with button inputs and prefabs
+        if (!context.performed) return;
         UpdateCursor(cursorPosition-1);
     }
 
-    public void MoveCursorRight()
+    public void MoveCursorRight(InputAction.CallbackContext context)
     {
+        //Needs to be added due to a bug with button inputs and prefabs
+        if (!context.performed) return;
         UpdateCursor(cursorPosition+1);
     }
 
