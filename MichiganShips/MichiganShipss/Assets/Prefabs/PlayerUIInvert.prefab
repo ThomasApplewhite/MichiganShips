@@ -406,7 +406,7 @@ MonoBehaviour:
   northCompass: {fileID: 4138542144137386741}
   opponentShip: 
   speedText: {fileID: 7836243212377953738}
-  fakeSpeedScale: 0
+  fakeSpeedScale: 6
   healthIndicators:
   - {fileID: 7758848170755454148}
   - {fileID: 5511488516265374782}
