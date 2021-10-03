@@ -71,6 +71,7 @@ public class Deck : MonoBehaviour
     {
         var data = deckQueue.Dequeue();
         var card = Instantiate(cardPrefab).GetComponent<Card>();
+
         card.homeDeck = this;
         card.InitializeFromCardData(data);
         card.gameObject.SetActive(true);
