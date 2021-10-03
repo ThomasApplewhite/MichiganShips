@@ -20,7 +20,6 @@ public class TradeDeck : Deck
     // Update is called once per frame
     protected override void FixedUpdate()
     {
-        Debug.Log($"{this.gameObject.name}.TradeDeck.FixedUpdate: queue size: {this.deckQueue.Count}");
         if(P1Trade.gameObject.transform.childCount < minimumChildren)
         {
             DrawTradeCard();

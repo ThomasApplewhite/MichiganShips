@@ -7,6 +7,7 @@ public class CardUIController : MonoBehaviour
 {
 
     bool currentlyHandRow;
+    public CursorRow cursor;
 
     [Header("Hand Row")]
     public Deck handRow;
@@ -40,8 +41,17 @@ public class CardUIController : MonoBehaviour
 
         handRow.gameObject.SetActive(false);
         tradeRow.SetActive(true);
+    }
 
-        tradeRow.transform.GetChild(0).gameObject.GetComponent<Card>().Select();
+    public void ActivateCard()
+    {
+        Transform activatedCard;
+        var cardNum = cursor.cursorPosition;
+
+        //so fucked not even vs code can parse it
+        activatedCard = currentlyHandRow ? handRow.transform.GetChild(cardNum) : tradeRow.transform.GetChild(cardNum);
+
+        activatedCard.GetComponent<Card>().Activate(Card.EffectSide.PORT);
     }
 
     public void SwitchRow()
