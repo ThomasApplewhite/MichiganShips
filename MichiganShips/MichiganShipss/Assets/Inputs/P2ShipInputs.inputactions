@@ -28,6 +28,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "CursorLeft",
+                    "type": "Button",
+                    "id": "add2da7d-a315-47e9-932d-b8a5f3e832bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CursorRight",
+                    "type": "Button",
+                    "id": "05d1c3c4-6606-4342-87c0-b7eba9281c02",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SelectCard",
+                    "type": "Button",
+                    "id": "c20e0664-ec3f-4801-a78b-43337ecc7485",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchRow",
+                    "type": "Button",
+                    "id": "30b6864e-d449-4424-9f4d-c208e62e6802",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -107,93 +139,50 @@
                     "action": "ShootPort",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "UITwo",
-            "id": "c1b6b68e-e832-482f-beb2-aea5316439e7",
-            "actions": [
-                {
-                    "name": "Navigate",
-                    "type": "PassThrough",
-                    "id": "66540019-4bd2-4c42-b79b-fbac5d2efcea",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Submit",
-                    "type": "PassThrough",
-                    "id": "e2891b52-8fc5-4b87-86b5-b8ff752a2583",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Cancel",
-                    "type": "Button",
-                    "id": "6e268ef6-ee31-4443-b911-ec253298f67f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "f4420f1a-f456-47ef-9000-8a68585f0842",
-                    "path": "<Keyboard>/i",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Submit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "3ac47ccb-478a-4902-ac9f-ff5ac82a4825",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "JL",
-                    "id": "8c743a72-3cf8-4821-82b9-a086284eea8d",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Navigate",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "Left",
-                    "id": "cb329c4d-e7d0-449a-9438-ae5350df7a42",
+                    "id": "2a1d95b6-9ca6-4131-b177-d4612db16960",
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "CursorLeft",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "Right",
-                    "id": "8796b998-74c2-42d0-ab04-68b858eeae0f",
+                    "name": "",
+                    "id": "3c68336c-71e3-4995-b430-10c02bbaa2ee",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "CursorRight",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8285584a-e903-4ca9-92c4-edccca8c103a",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectCard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d817c3e-6098-47ee-a18b-f250d3a6da22",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchRow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

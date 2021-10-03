@@ -7,10 +7,8 @@ public class TradeCard : Card
 {
     public TradeCard twin { get; set; }
 
-    //To fulfill ISubmitHandler so that pressing "Submit" activates the card
-    public override void OnSubmit(BaseEventData eventData)
+    public override void Activate(EffectSide side)
     {
-        FindSelectableOnLeft().Select();
         Buy();
     }
 

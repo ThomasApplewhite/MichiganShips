@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Card : Selectable, ISubmitHandler
+public class Card : MonoBehaviour//Selectable, ISubmitHandler
 {
     public enum RowState
     {
@@ -50,7 +50,7 @@ public class Card : Selectable, ISubmitHandler
     }
 
     //To fulfill ISubmitHandler so that pressing "Submit" activates the card
-    public virtual void OnSubmit(BaseEventData eventData)
+    /*public virtual void OnSubmit(BaseEventData eventData)
     {
         var next = FindSelectableOnLeft();
         if(next == null)
@@ -63,7 +63,7 @@ public class Card : Selectable, ISubmitHandler
         }
 
         Activate(EffectSide.PORT);
-    }
+    }*/
 
     /*public void ActivatePort()
     {
@@ -75,7 +75,7 @@ public class Card : Selectable, ISubmitHandler
         Activate(EffectSide.STARBOARD);
     }*/
 
-    protected virtual void Activate(EffectSide side)
+    public virtual void Activate(EffectSide side)
     {
         Debug.Log($"{this.gameObject.name}.Card.Activate: activated on {side} side");
         homeDeck.DiscardCard(sourceData);
